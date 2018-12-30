@@ -59,7 +59,7 @@ service:
 
     #### Instance class
     #### (default: db.t2.small)
-    instanceClass: db.t2.micro
+    instanceClass: db.t2.small
 
   ### Environment variables exposed to the containers running in ECS
   environment:

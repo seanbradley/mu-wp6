@@ -83,7 +83,7 @@ service:
 
       #### The GitHub repo slug or CodeCommit repo name to build
       #### (default: none)
-      repo: seanbradley/mu-wordpress
+      repo: seanbradley/mu-wp6
 
     acceptance:
       #### The environment name to deploy to for testing

@@ -115,7 +115,7 @@ Commit your changes and push them back up to your GitHub account:
 Start up your pipeline, which will deploy to 2 environments, "test" and
 "prod":
 
-    mu pipeline up
+    mu -n <namespace> pipeline up
 
 Mu will ask you for a GitHub token. CodePipeline uses it to watch your
 repo for changes so that it can automatically deploy them.
@@ -126,13 +126,13 @@ Enter it when mu asks for it. (But don't give it to anything else! ;^)
 
 Watch your pipeline get deployed:
 
-    mu pipeline logs -f
+    mu -n <namespace> pipeline logs -f
 
 ### Inspect
 
 When that's done, you can verify that you have at least a "test" env...
     
-    mu env list
+    mu -n <namespace> env list
 
 You'll see a table like this:
 
@@ -144,13 +144,13 @@ You'll see a table like this:
 
 You can view the details on any of the environments:
 
-    mu env show test
+    mu -n <namespace> env show test
 
 If you want to watch the "test" environment's services get deployed, or view
 logs from the "test" environment, try these:
 
-    mu service logs -f test
-    mu env logs -f test
+    mu -n <namespace> service logs -f test
+    mu -n <namespace> env logs -f test
 
 ### Initialize WordPress
 

@@ -13,13 +13,13 @@ environments:
 
     #### The instance type to use for the ECS container instances
     #### (default: t2.micro)
-    instanceType: t2.nano
+    instanceType: t2.micro
 
 - name: prod
   cluster:
     keyName: wp6
     #instanceType: t2.small
-    instanceType: t2.micro
+    instanceType: t2.small
 
 ## See https://github.com/stelligent/mu/wiki/Services
 service:
